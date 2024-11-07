@@ -1,7 +1,7 @@
 // Função para cifrar uma mensagem
 function cifrar() {
     const mensagem = document.getElementById('mensagem').value;
-    const chave = "minhaChaveSecreta";  // Chave fixa para fins de demonstração, ajuste conforme necessário
+    const chave = "minhaChaveSecreta"; 
     if (mensagem === "") {
         alert("Por favor, preencha a mensagem.");
         return;
@@ -13,7 +13,7 @@ function cifrar() {
 // Função para decifrar uma mensagem
 function decifrar() {
     const mensagemCifrada = document.getElementById('mensagem').value;
-    const chave = "minhaChaveSecreta";  // Chave fixa para fins de demonstração, ajuste conforme necessário
+    const chave = "minhaChaveSecreta"; 
     if (mensagemCifrada === "") {
         alert("Por favor, preencha a mensagem cifrada.");
         return;
