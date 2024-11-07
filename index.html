@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Mensagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografia de Mensagens</h1>
+        <input type="text" id="mensagem" placeholder="Digite a mensagem">
+        <button onclick="cifrar()">Cifrar Mensagem</button>
+        <button onclick="decifrar()">Decifrar Mensagem</button>
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Carregar CryptoJS via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="criptografia.js"></script>
+</body>
+</html>
